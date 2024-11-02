@@ -1,0 +1,76 @@
+/* Styling the top section with the search input and button */
+.top {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .top input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .top button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .top button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling the job cards */
+  .jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .jobs > div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .jobs h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .jobs h2, .jobs h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .jobs h3 {
+    font-weight: normal;
+  }
+  
+  /* Adding responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .jobs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .jobs > div {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  

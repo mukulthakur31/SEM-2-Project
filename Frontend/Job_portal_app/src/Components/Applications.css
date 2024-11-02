@@ -1,0 +1,47 @@
+/* Container for all applications */
+.application-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Individual application card */
+.application-card {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Headers inside the application card */
+.application-card h1, .application-card h2 {
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Specific styling for the applied date */
+.application-card h2 {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Additional styles */
+.application-card h1 {
+    font-size: 1.2em;
+}
+
+.application-card h2 {
+    font-size: 1em;
+    color: #777;
+}
